@@ -2120,3 +2120,12 @@ span.error {
 .social_icons a:not(:last-child){
   margin-right: 20px;
 }
+
+
+.u-margin-bottom{
+  margin-bottom: 10px !important;
+}
+
+.u-margin-bottom-small{
+  margin-bottom: 5px !important;
+}
