@@ -2129,3 +2129,27 @@ span.error {
 .u-margin-bottom-small{
   margin-bottom: 5px !important;
 }
+
+.u-margin-bottom-big{
+  margin-bottom: 25px !important;
+}
+
+
+.center-text{
+  text-align: center;
+}
+
+.skill-icon{
+  width: 50px;
+}
+
+.center-hrz--col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-hrz{
+  justify-content: center;
+  align-items: center;
+}
