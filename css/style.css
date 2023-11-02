@@ -2153,3 +2153,8 @@ span.error {
   justify-content: center;
   align-items: center;
 }
+
+.site-copyright{
+  opacity: 0;
+  height: 0;
+}
