@@ -21,6 +21,9 @@
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/6a17ab78c7.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
   </head>
   <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
@@ -155,7 +158,7 @@
           <div class="row gutter-isotope-item">
 
             <div class="item col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-              <a href="#" class="portfolio-item item-portrait isotope-item u-margin-bottom" >
+              <a href="#timeline" class="portfolio-item item-portrait isotope-item u-margin-bottom" >
                   <img src="images/mashdevlogo.png" class="lazyload  img-fluid" alt="Images" />
                 </a>
                 <h3>Mashdev Investments CC</h3>
@@ -166,7 +169,7 @@
             </div>
 
             <div class="item col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-              <a  href="#" class="portfolio-item item-portrait isotope-item u-margin-bottom" >
+              <a  href="#timeline" class="portfolio-item item-portrait isotope-item u-margin-bottom" >
                   <img src="images/muhoko.png" class="lazyload  img-fluid" alt="Images" />
               </a>
                 <h3>Muhoko</h3>
@@ -177,7 +180,7 @@
             </div>
 
             <div class="item col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-              <a href="#" class="portfolio-item item-portrait isotope-item u-margin-bottom" >
+              <a href="#timeline" class="portfolio-item item-portrait isotope-item u-margin-bottom" >
                   <img src="images/lubinlogo.png" class="lazyload  img-fluid" alt="Images" />
                 </a>
                 <h3>Lubin Talent Solutions</h3>
@@ -188,7 +191,7 @@
             </div>
 
             <div class="item startup illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-              <a href="#" class="portfolio-item item-portrait isotope-item u-margin-bottom" >
+              <a href="#timeline" class="portfolio-item item-portrait isotope-item u-margin-bottom" >
                   <img src="images/seelogo.png" class="lazyload  img-fluid" alt="Images" />
                 </a>
                 <h3>SEE Namibia</h3>
@@ -211,7 +214,7 @@
           <div class="row gutter-isotope-item">
 
             <div class="item col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-              <a href="#" class="portfolio-item  item-portrait isotope-item u-margin-bottom" >
+              <a href="#education" class="portfolio-item  item-portrait isotope-item u-margin-bottom" >
                   <img src="images/maincampus.jpg" class="lazyload  img-fluid" alt="Images" />
                 </a>
                 <h3>University Of Namibia</h3>
@@ -221,7 +224,7 @@
             </div>
 
             <div class="item col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-              <a href="#" class="portfolio-item  item-portrait isotope-item u-margin-bottom" >
+              <a href="#education" class="portfolio-item  item-portrait isotope-item u-margin-bottom" >
                   <img src="images/gtss.jpg" class="lazyload  img-fluid" alt="Images" />
                 </a>
                 <h3>Gabriel Taapopi Senior Secondary School</h3>
@@ -231,7 +234,7 @@
             </div>
 
             <div class="item col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-              <a href="#" class="portfolio-item  item-portrait isotope-item u-margin-bottom" >
+              <a href="#education" class="portfolio-item  item-portrait isotope-item u-margin-bottom" >
                   <img src="images/mdps.png" class="lazyload  img-fluid" alt="Images" />
                 </a>
                 <h3>Maurits Devenish Private School</h3>
@@ -665,7 +668,7 @@
           <div class="row gutter-isotope-item">
 
             <div class="item col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-              <a href="#" class="portfolio-item  item-portrait isotope-item u-margin-bottom" >
+              <a href="#awards" class="portfolio-item  item-portrait isotope-item u-margin-bottom" >
                   <img src="images/best2nd.jpeg" class="lazyload  img-fluid" alt="Images" />
                 </a>
                 <h3>University Of Namibia</h3>
@@ -675,7 +678,7 @@
             </div>
 
             <div class="item col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-              <a href="#" class="portfolio-item  item-portrait isotope-item u-margin-bottom" >
+              <a href="#awards" class="portfolio-item  item-portrait isotope-item u-margin-bottom" >
                   <img src="images/best1st.jpeg" class="lazyload  img-fluid" alt="Images" />
                 </a>
                 <h3>University Of Namibia</h3>
@@ -853,16 +856,16 @@
           <div class="row justify-content-between">
             
             <div class="col-md-6">
-              <form method="post" class="form-outline-style-v1" id="contactForm">
+              <form  class="form-outline-style-v1" id="contactForm">
                 <div class="form-group row mb-0">
 
                   <div class="col-lg-6 form-group gsap-reveal">
                     <label for="name">Name</label>
-                    <input name="name" type="text" class="form-control" id="name">
+                    <input required name="name" type="text" class="form-control" id="name">
                   </div>
                   <div class="col-lg-6 form-group gsap-reveal">
                     <label for="email">Email</label>
-                    <input name="email" type="email" class="form-control" id="email">
+                    <input required name="email" type="email" class="form-control" id="email">
                   </div>
                   <div class="col-lg-12 form-group gsap-reveal">
                     <label for="message">Write your message...</label>
@@ -871,15 +874,15 @@
                 </div>
                 <div class="form-group row gsap-reveal">
                     <div class="col-md-12 d-flex align-items-center">
-                      <input type="submit" class="btn btn-outline-pill btn-custom-light mr-3" value="Send Message">
+                      <input required type="submit" class="btn btn-outline-pill btn-custom-light mr-3" value="Send Message">
                       <span class="submitting"></span>
                     </div>
                   </div>
               </form>
-              <div id="form-message-warning" class="mt-4"></div> 
-              <div id="form-message-success">
-                Your message was sent, thank you!
-              </div>
+
+            </div>
+
+            <div id="loading-indicator2" style="display: none">
 
             </div>
 
@@ -887,15 +890,15 @@
               <div class="contact-info-v1">
                 <div class="gsap-reveal d-block">
                   <span class="d-block contact-info-label">Email</span>
-                  <a href="#" class="contact-info-val">info@yourdomain.com</a>
+                  <a href="#" class="contact-info-val">hi@douglasmasho.com</a>
                 </div>
                 <div class="gsap-reveal d-block">
                   <span class="d-block contact-info-label">Phone</span>
-                  <a href="#" class="contact-info-val">+12 345 6789 012</a>
+                  <a href="#" class="contact-info-val">+264 81 625 6790</a>
                 </div>
                 <div class="gsap-reveal d-block">
                   <span class="d-block contact-info-label">Address</span>
-                  <address class="contact-info-val">273 South Riverview Rd. <br> New York, NY 10011</address>
+                  <address class="contact-info-val">29 Goshawk Road <br> Hochland Park Namibia</address>
                 </div>
               </div>
             </div>
@@ -946,9 +949,10 @@
     <div class="site-loader-wrap">
       <div class="site-loader"></div>
     </div>
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/scripts-dist.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="./js/message.js"></script>
   </body>
 </html>
