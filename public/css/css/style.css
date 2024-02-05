@@ -1495,3 +1495,7 @@ span.error {
     background: #000; }
 
 
+    .loading-indicator{
+      display: inline-block;
+      width: 50px;
+    }

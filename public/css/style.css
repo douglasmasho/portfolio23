@@ -6,6 +6,8 @@ body {
   line-height: 30px;
   font-weight: 300;
   position: relative;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .newlogo{
@@ -543,7 +545,9 @@ a, a:hover {
   -webkit-transition: .3s all ease-out;
   -o-transition: .3s all ease-out;
   transition: .3s all ease-out;
+  width: 100vw;
 }
+
 
 /* Mobile nav */
 .unslate_co--site-mobile-menu {
@@ -2154,3 +2158,13 @@ span.error {
   align-items: center;
 }
 
+#loading-indicator{
+  display: inline-block;
+  width: 80px !important;
+}
+
+.center-vert{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
